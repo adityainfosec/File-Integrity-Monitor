@@ -26,7 +26,7 @@ This tool helps detect unauthorized file changes in a directory by creating a ba
 git clone https://github.com/adityainfosec/File-Integrity-Monitor.git
 cd File-Integrity-Monitor
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -37,12 +37,14 @@ pip install -r requirements.txt
 python3 fim.py baseline test_lab
 ```
 
-Check Integrity
+### Check Integrity
 ```bash
 python3 fim.py check test_lab
 ```
 
-🧪 Example Lab Setup
+---
+
+## 🧪 Example Lab Setup
 
 ```bash
 mkdir test_lab
@@ -52,24 +54,26 @@ echo "file two content" > test_lab/b.txt
 echo "config data" > test_lab/c.txt
 ```
 
-Create baseline
+### Create baseline
 ```bash
 python3 fim.py baseline test_lab
 ```
 
-Modify files
+### Modify files
 ```bash
 echo "HACKED DATA" >> test_lab/a.txt
 rm test_lab/b.txt
 echo "new file created" > test_lab/d.txt
 ```
 
-Run check
+### Run check
 ```bash
 python3 fim.py check test_lab
 ```
 
-📊 Example Output
+---
+
+## 📊 Example Output
 
 ```
 INTEGRITY REPORT
@@ -84,7 +88,9 @@ INTEGRITY REPORT
  + d.txt
 ```
 
-🧠 How It Works
+---
+
+## 🧠 How It Works
 
 - Scans directory recursively  
 - Generates SHA-256 hash for each file  
@@ -92,12 +98,16 @@ INTEGRITY REPORT
 - Compares baseline vs current state  
 - Shows file changes  
 
-⚠️ Disclaimer
+---
+
+## ⚠️ Disclaimer
 
 This tool is for educational and authorized security testing only.  
 Do not use it on systems without permission.
 
-👨‍💻 Author
+---
+
+## 👨‍💻 Author
 
 Aditya  
 Cybersecurity Enthusiast | Ethical Hacking | Blue Team Tools
