@@ -217,3 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 fim.db
+test_lab/
+fim.db
+baseline.json
+test_lab/
