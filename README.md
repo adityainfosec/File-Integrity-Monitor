@@ -26,6 +26,8 @@ This tool helps detect unauthorized file changes in a directory by creating a ba
 git clone https://github.com/adityainfosec/File-Integrity-Monitor.git
 cd File-Integrity-Monitor
 pip install -r requirements.txt
+
+
 ---
 
 ## 🚀 Usage
