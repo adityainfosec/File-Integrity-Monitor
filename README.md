@@ -20,15 +20,15 @@ This tool helps detect unauthorized file changes in a directory by creating a ba
 
 ---
 
-## ⚙️ Installation
-
-```bash
 git clone https://github.com/adityainfosec/File-Integrity-Monitor.git
 cd File-Integrity-Monitor
 pip install -r requirements.txt
-🚀 Usage
 
-Create Baseline
+---
+
+## 🚀 Usage
+
+### Create Baseline
 ```bash
 python3 fim.py baseline test_lab
 ```
